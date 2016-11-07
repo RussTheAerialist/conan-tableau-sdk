@@ -8,8 +8,9 @@ your project to consume the Tableau Extract API for C++ with
 
 ## OSX Caveat
 
-Because of rpath, you must install the .framework files that are copied into
-the bin directory into /Library/Frameworks in order to run your binaries.
+Because of rpath, you must install the .framework files from the `.dmg`
+into `/Library/Frameworks`.  You can download the `.dmg` from
+the [Tableau Help Files](https://onlinehelp.tableau.com/current/api/sdk/en-us/SDK/tableau_sdk_installing.htm)
 
 ## Windows Caveat
 

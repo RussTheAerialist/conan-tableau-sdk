@@ -37,6 +37,7 @@ class TableauSDK(ConanFile):
        pass  # prebuilt binaries
 
     def _package_macos(self):
+        # TODO: Unfortunately this doesn't create good versions of the .framework files because of symlinks
         self.copy('*.framework/*', dst='lib')
         self.copy('*/framework/Tableau*', dst='lib')
         self.copy('*.h', dst='include/TableauCommon', src='TableauCommon.framework/Versions/Current/Headers')
