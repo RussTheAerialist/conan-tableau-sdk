@@ -6,5 +6,5 @@ cmake
 
 [imports]
 lib, *.lib -> ./bin
-# lib, TableauCommon.framework/* -> /Library/Frameworks/
-# lib, TableauExtract.framework/* -> /Library/Frameworks/
+lib, TableauCommon.framework/* -> ./bin
+lib, TableauExtract.framework/* -> ./bin
