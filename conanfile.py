@@ -56,10 +56,11 @@ class TableauSDK(ConanFile):
         pass
 
     def package_info(self):
-        # self.cpp_info.libs=['TableauExtract', 'TableauCommon']
         if self.settings.os == 'Macos':
             self.cpp_info.exelinkflags.append("-F${CONAN_TABLEAUSDK_ROOT}/lib")
             self.cpp_info.exelinkflags.append("-framework TableauCommon")
             self.cpp_info.exelinkflags.append("-framework TableauExtract")
 
             self.cpp_info.sharedlinkflags = self.cpp_info.exelinkflags
+        else:
+            self.cpp_info.libs=['TableauExtract', 'TableauCommon']
